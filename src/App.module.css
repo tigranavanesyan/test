@@ -1,0 +1,7 @@
+/* App Container */
+.app {
+  min-height: 100vh;
+  background-color: var(--background);
+  width: 100%;
+  position: relative;
+}

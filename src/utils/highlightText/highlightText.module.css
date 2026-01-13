@@ -1,0 +1,4 @@
+.highlightMark {
+  background-color: var(--yellow-200);
+  color: var(--foreground);
+}

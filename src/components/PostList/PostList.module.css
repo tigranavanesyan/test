@@ -1,0 +1,71 @@
+/* Post List */
+.postListContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .postListContainer {
+    padding: 0 1rem;
+  }
+}
+
+.postListResults {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 1rem;
+}
+
+.postListResultsText {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin: 0;
+}
+
+.postListEmpty {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.postListEmptyText {
+  color: var(--foreground);
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.postListEmptyHint {
+  color: var(--gray);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.postListGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.postListItem {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .postListItem {
+    width: calc(50% - 16px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .postListItem {
+    width: calc(33.333% - 26px);
+  }
+}
