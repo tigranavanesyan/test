@@ -28,7 +28,7 @@
 
 .postModalContent {
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 100%;
   max-width: 700px;
   max-height: 90vh;
@@ -120,20 +120,22 @@
 .postModalImageWrapper {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  aspect-ratio: 720 / 460;
   background-color: white;
   border-radius: 1rem 1rem 0 0;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .postModalImage {
   width: 100%;
-  max-width: 100%;
-  aspect-ratio: 720 / 460;
-  object-fit: cover;
+  height: auto;
+  max-height: 70vh;
   display: block;
   transition: opacity 0.3s;
+  object-fit: contain;
+  object-position: top;
 }
 
 .postModalImageLoading {
